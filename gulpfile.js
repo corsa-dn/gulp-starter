@@ -31,7 +31,7 @@ gulp.task('babel', function() {
 });
 
 gulp.task('dev', function() {
-  browserSync.init(['./dist/css/*.css', './dist/*.html', './dist/js/*.js'], {
+  	browserSync.init(['./dist/css/*.css', './dist/*.html', './dist/js/*.js'], {
 	    server: {
 	    	baseDir: './dist/'
 	    }

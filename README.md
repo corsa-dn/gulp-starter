@@ -21,7 +21,7 @@ npm install
 gulp dev
 ```
 
-image-min usage(temporarily): 
+#### image-min usage(temporarily): 
 ```
 gulp image-o
 ```

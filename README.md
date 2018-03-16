@@ -10,6 +10,17 @@ Gulp quick-start config
 Optional:
 * Plumber
 
+Usage:
+```
+git clone
+```
+```
+npm install
+```
+```
+gulp dev
+```
+
 image-min usage(temporarily): 
 ```
 gulp image-o

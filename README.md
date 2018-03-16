@@ -1,4 +1,4 @@
-## gulp-starter
+## Gulp-starter
 Gulp quick-start config
 
 + SCSS
@@ -10,7 +10,7 @@ Gulp quick-start config
 Optional:
 * Plumber
 
-Usage:
+### Usage:
 ```
 git clone
 ```

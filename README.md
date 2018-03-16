@@ -10,5 +10,7 @@ Gulp quick-start config
 Optional:
 * Plumber
 
-Temporarily not working: 
-* Image-optimize + pngquant
+image-min usage(temporarily): 
+```
+gulp image-o
+```

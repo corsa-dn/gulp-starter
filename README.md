@@ -9,9 +9,6 @@ Gulp quick-start config
 + Browser-sync
 + Plumber (errors display by gulp-notify)
 
-Optional:
-* 
-
 ### Usage:
 ```
 git clone

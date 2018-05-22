@@ -1,14 +1,19 @@
 ## Gulp-starter
 Gulp quick-start config
 
-+ SCSS
-+ CSSO
-+ Autoprefixer
-+ Babel ES2015
-+ Browser-sync
 
-Optional:
-* Plumber
+    📦 Pug template compiler
+    📦 Sass/SCSS compiler
+    📦 Babel ES6
+    🛠️ CSS Autoprefixer
+    💎 CSSO: cleaning, compression and restructuring of your CSS
+    ⚡ BrowserSync: local server and livereload with compiling all of your files
+    🤦‍♂️ Pumber: no breaking server on compiling errors
+    🤔 Notify: errors via system push notification
+    and optional (manual launch):
+    🖼️ ImageMin + png-quant: optimize and minimize your graphics
+
+
 
 ### Usage:
 ```

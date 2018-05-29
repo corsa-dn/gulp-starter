@@ -23,7 +23,7 @@ gulp.task('pug', function () {
 })
 
 gulp.task('scss', function () {
-	return gulp.src('./src/scss/*.scss')
+	return gulp.src('./src/scss/**/*.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError()
 		}))
@@ -60,7 +60,7 @@ gulp.task('dev', function () {
 	});
 
 	gulp.watch(['./src/views/**/*.pug'], ['pug']);
-	gulp.watch(['./src/scss/*.scss'], ['scss']);
+	gulp.watch(['./src/scss/**/*.scss'], ['scss']);
 	gulp.watch(['./src/img/*.*'], ['image-o']);
 	gulp.watch(['./src/js/*.js'], ['babel']);
 });

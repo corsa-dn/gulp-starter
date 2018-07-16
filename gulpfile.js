@@ -7,23 +7,20 @@ var gulp = require('gulp'),
 	pngquant = require('imagemin-pngquant'),
 	plumber = require('gulp-plumber'),
 	babel = require('gulp-babel'),
-	pug = require('gulp-pug'),
-	notify = require('gulp-notify');
+	notify = require('gulp-notify'),
+	nunjucks = require('gulp-nunjucks');
 
-gulp.task('pug', function () {
-	return gulp.src('./src/views/*.pug')
-		.pipe(plumber({
-			errorHandler: notify.onError()
-		}))
-		.pipe(pug({
-			pretty: true
-		}))
-		.pipe(gulp.dest('./dist/'))
-		.pipe(browserSync.stream());
-})
+gulp.task('nunjucks', () =>
+	gulp.src('./src/views/**/*.html')
+	.pipe(plumber({
+		errorHandler: notify.onError()
+	}))
+	.pipe(nunjucks.compile())
+	.pipe(gulp.dest('./dist/'))
+);
 
 gulp.task('scss', function () {
-	return gulp.src('./src/scss/**/*.scss')
+	return gulp.src('./src/scss/main.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError()
 		}))
@@ -53,14 +50,13 @@ gulp.task('babel', function () {
 });
 
 gulp.task('dev', function () {
-	browserSync.init(['./src/views/**/*.pug', './dist/css/*.css', './dist/*.html', './dist/js/*.js'], {
+	browserSync.init(['./dist/css/*.css', './dist/*.html', './dist/js/*.js'], {
 		server: {
 			baseDir: './dist/'
 		}
 	});
 
-	gulp.watch(['./src/views/**/*.pug'], ['pug']);
+	gulp.watch(['./src/views/**/*.html'], ['nunjucks']);
 	gulp.watch(['./src/scss/**/*.scss'], ['scss']);
-	gulp.watch(['./src/img/*.*'], ['image-o']);
 	gulp.watch(['./src/js/*.js'], ['babel']);
 });

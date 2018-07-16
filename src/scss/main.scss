@@ -1,13 +1,11 @@
 @import 'reset';
 @import './blocks/greet';
-@import './blocks/features_list';
-
 body {
 	font-family: Calibri, "Helvetica Neue", Helvetica, sans-serif;
 	background: #f1f1f1;
 }
 
-h4{
+h4 {
 	margin-top: 28px;
 }
 
@@ -17,11 +15,10 @@ h4{
 	margin: 0 auto;
 }
 
-code{
+code {
 	display: block;
 	background-color: rgb(230, 230, 230);
 	border-radius: 3px;
 	padding: 21px;
 	margin: 14px 0;
 }
-

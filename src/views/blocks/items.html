@@ -1,0 +1,45 @@
+{%
+  set items = [
+    {
+      icon: '📦',
+      content: 'Nunjucks template compiler'
+    },
+    {
+      icon: '📦',
+      content: 'Sass/SCSS compiler'
+    },
+    {
+      icon: '📦',
+      content: 'Babel ES6'
+    },
+    {
+      icon: '🛠️',
+      content: 'CSS Autoprefixer'
+    },
+    {
+      icon: '💎',
+      content: 'CSSO: cleaning, compression and restructuring of your CSS'
+    },
+    {
+      icon: '⚡',
+      content: 'BrowserSync: local server and livereload with compiling all of your files'
+    },
+    {
+      icon: '🤦‍',
+      content: 'Pumber: no breaking server on compiling errors'
+    },
+    {
+      icon: '🤔',
+      content: 'Notify: errors via system push notification'
+    }
+  ]
+%}
+
+<ul>
+  {% for item in items %}
+  <li>
+    <span>{{ item.icon }}</span>
+    {{ item.content }}
+  </li>
+  {% endfor %}
+</ul>

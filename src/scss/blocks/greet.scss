@@ -3,8 +3,24 @@ h1 {
   color: #eb4a4b;
 }
 
-img {
-  width: 100px;
-  display: block;
-  margin: 21px auto 28px auto;
+ul {
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  li {
+    font-size: 19px;
+    line-height: 32px;
+    vertical-align: middle;
+    padding: 14px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    color: #444;
+    box-shadow: 0 0 30px rgba(#000, 0.1);
+    span {
+      font-size: 22px;
+      vertical-align: middle;
+    }
+  }
 }

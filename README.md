@@ -10,10 +10,6 @@ Gulp quick-start config
     ⚡ BrowserSync: local server and livereload with compiling all of your files
     🤦‍♂️ Pumber: no breaking server on compiling errors
     🤔 Notify: errors via system push notification
-    and optional (manual launch):
-    🖼️ ImageMin + png-quant: optimize and minimize your graphics
-
-
 
 ### Usage:
 ```
